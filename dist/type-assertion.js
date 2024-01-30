@@ -7,4 +7,10 @@ let username = 'John_Doe'; // ** unknown type can be any type
 username.toUpperCase(); // ** can call string method on unknown type by using type assertion
 //        ^^ this is type assertion 
 username.toUpperCase(); // ** can call string method on unknown type by using type assertion
-// ^^ another way to do type assertion
+// ^^ another way to do type assertion, target type is string
+function getNetPrice(price, discount, format) {
+    let netPrice = price * (1 - discount);
+    return format ? `$${netPrice}` : netPrice;
+}
+let netPrice = getNetPrice(100, 0.05, true);
+console.log(netPrice);

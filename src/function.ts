@@ -60,3 +60,5 @@ function getUserInfo(): {name: string, age: number} { // define type of return v
   return {name: "Kasidate", age: 21};
 }
 console.log(getUserInfo()); // { name: 'Kasidate', age: 21 }
+
+

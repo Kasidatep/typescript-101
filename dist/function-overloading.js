@@ -20,3 +20,15 @@ function sayHello(nameOrAge, age) {
 sayHello("Kasidate"); // Hello Kasidate
 sayHello(21); // Hello 21
 sayHello("Kasidate", 21); // Hello Kasidate 21
+// Method Overloading
+// Method overloading is a feature that allows us to have multiple methods with the same name but different parameters types and return type
+class Calculator {
+    add(x, y) {
+        return x + y;
+    }
+}
+let calculator = new Calculator();
+console.log(calculator.add(10, 20)); // 30
+console.log(calculator.add("10", "20")); // 1020
+// console.log(calculator.add(true, false)); // error because not match type
+// console.log(calculator.add(10, "20")); // error because not match type only number and number or string and string

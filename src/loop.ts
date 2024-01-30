@@ -33,3 +33,11 @@ let user = {  // ** object type
 for(let key in user){
     // console.log(`[for-in loop]key = ${key} value = ${user[key]}`); // ** user[key] is the same as user.name
 }
+
+// continue example
+for(let count:number = 1; count <= 10; count++){
+    if(count == 5){
+        continue;
+    }
+    console.log(`[continue]count = ${count}`);
+} // ** continue is skip the current iteration, result is skip count = 5

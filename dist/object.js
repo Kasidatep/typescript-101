@@ -13,3 +13,10 @@ const person2 = {
 };
 console.log(person2.name); // John
 console.log(person2.age); // 30
+// empty object type
+const person3 = {}; // empty object type
+console.log(person3); // {}
+const person4 = {
+    name: 'John', // string type only
+    age: 30 // number type only 
+};

@@ -17,3 +17,18 @@ const person2: {
 console.log(person2.name); // John
 console.log(person2.age); // 30
 
+// empty object type
+const person3: {} = {}; // empty object type
+console.log(person3); // {}
+
+// Object type can use type aliases for object type example : type aliases
+type Person = {
+    name: string;
+    age: number;
+}; // type aliases
+
+const person4: Person = {
+    name: 'John', // string type only
+    age: 30 // number type only 
+};
+
